@@ -1,0 +1,14 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Verve Juice</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding: 50px;">
+  <h1>🍹 Welcome to Verve Juice! 🍹</h1>
+  <p>Order your fresh juice here!</p>
+  <button onclick="alert('Thank you for your order!')">Order Now</button>
+</body>
+</html>
+

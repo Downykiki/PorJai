@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <title>ร้านอาหารตามสั่ง</title>
+  <title> Krua Por Jai</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -70,7 +70,7 @@
       <button onclick="addToCart('ข้าวหมูทอด', 50)">+</button>
     </div>
     <div class="menu-item">
-      <img src="https://cdn.jsdelivr.net/gh/dowykiki/assets/tomyumseafood.png" alt="ข้าวต้มยำทะเล">
+      <img src="https://cdn.jsdelivr.net/gh/dowykiki/assets/tomyumseafood.png" alt="ข้าวผัดต้มยำทะเล">
       <h4>ข้าวต้มยำทะเล</h4>
       <p>80 บาท</p>
       <button onclick="addToCart('ข้าวผัดต้มยำทะเล', 80)">+</button>
@@ -112,18 +112,18 @@
 
     function goToQR() {
       document.body.innerHTML = `
-        <h1>เบริการชำระเงิน</h1>
-        <p>สแกน QR รับเงินพ่อมพ่อยที่ 0818869934</p>
+        <h1>บริการชำระเงิน</h1>
+        <p>Scan QR Promptpay 0818869934</p>
         <img src="https://promptpay.io/0818869934.png" width="300"/>
         <br><br>
-        <button onclick="showReceipt()">ชำระเสร็จแล้ว</button>
+        <button onclick="showReceipt()">ยะฮู้วว...จ่ายเงินสำเร็จแล้ว!!</button>
       `;
     }
 
     function showReceipt() {
       document.body.innerHTML = '<h1>ใบเสร็จ</h1><ul>' +
         cart.map(i => `<li>${i.name} - ${i.price} บาท</li>`).join('') +
-        '</ul><p>รวมยอด: ' + cart.reduce((a,b)=>a+b.price,0) + ' บาท</p><h2>ขอบคุณค่ะที่อุดหรรย</h2>';
+        '</ul><p>รวมยอด: ' + cart.reduce((a,b)=>a+b.price,0) + ' บาท</p><h2>ขอบคุณค่ะที่มารับทานน้าา</h2>';
     }
   </script>
 </body>
